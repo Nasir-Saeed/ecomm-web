@@ -1,4 +1,4 @@
-import { SidebarSkeletonUI } from './SidebarSkeletonUI';
-import { ProductCardUI } from '../components/ProductCardUI';
+import { DesktopHeaderUI } from './DesktopHeaderUI';
+import { ProductCardUI } from './ProductCardUI';
 
-export { SidebarSkeletonUI, ProductCardUI };
+export { DesktopHeaderUI, ProductCardUI };

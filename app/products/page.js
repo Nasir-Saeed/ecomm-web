@@ -1,9 +1,9 @@
 
 "use client"
 import ProductCardUI from "@/components/ProductCardUI";
-import { Container } from "@mui/material";
 import { useEffect, useState } from "react";
 import classes from "./Product.module.css";
+import { Container } from "react-bootstrap";
 
 export default function Products() {
     const [products, setProducts] = useState([]);

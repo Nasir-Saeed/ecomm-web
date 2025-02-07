@@ -1,32 +1,20 @@
 "use client"
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-
+import Image from 'next/image';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import classes from "./ProductCardUI.module.css"
 export default function ProductCardUI({ data }) {
+
     return (
-        <Card sx={{ maxWidth: 345 }}>
-            <CardMedia
-                sx={{ height: 140 }}
-                image={data?.images[0]}
-                title="green iguana"
-            />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    {data?.title}
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    {data?.description}
-                </Typography>
-            </CardContent>
-            {/* <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-            </CardActions> */}
+        <Card style={{ width: '19rem' }}>
+            <div className={classes.product_card_image}>
+                <Image src={data?.thumbnail} fill alt={data?.title} />
+            </div>
+            <Card.Body>
+                <h3>{data?.title}</h3>
+                <p> {data?.description?.split(" ").slice(0, 15).join(" ")}</p>
+            </Card.Body>
         </Card>
     );
 }
+

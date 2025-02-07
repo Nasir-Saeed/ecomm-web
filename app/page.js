@@ -1,4 +1,4 @@
-import SidebarSkeletonUI from "@/components/SidebarSkeletonUI";
+import SidebarSkeletonUI from "@/components/DesktopHeaderUI";
 import Products from "./products/page";
 
 

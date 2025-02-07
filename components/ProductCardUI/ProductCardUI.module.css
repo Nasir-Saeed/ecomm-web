@@ -1,0 +1,23 @@
+.product_card_image {
+    position: relative;
+    height: 300px;
+}
+
+.product_card_image img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body h3 {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.card-body p {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 16px;
+}
