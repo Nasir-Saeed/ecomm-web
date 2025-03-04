@@ -1,9 +1,9 @@
-
 "use client"
 import ProductCardUI from "@/components/ProductCardUI";
 import { useEffect, useState } from "react";
 import classes from "./Product.module.css";
 import { Container } from "react-bootstrap";
+import LoadingUI from "@/components/LoadingUI";
 
 export default function Products() {
     const [products, setProducts] = useState([]);
@@ -17,30 +17,25 @@ export default function Products() {
         setLoading(false);
     }
 
-    console.log(products, "products");
     useEffect(() => {
         getData();
     }, [])
 
     return (
         <>
-            <Container >
+            <Container>
                 {
                     loading === "get-data" ? (
-                        <h2>Loading...!</h2>
+                        <LoadingUI />
                     ) : (
-
                         <div className={classes.product_card_container}>
                             {products?.map((product) => (
                                 <ProductCardUI data={product} key={product.id} isLoading={loading} />
                             ))}
                         </div>
-
-
                     )
                 }
             </Container>
-
         </>
     )
 }

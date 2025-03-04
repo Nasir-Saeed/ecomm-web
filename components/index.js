@@ -1,4 +1,4 @@
-import { DesktopHeaderUI } from './DesktopHeaderUI';
+import { HeaderUI } from './HeaderUI';
 import { ProductCardUI } from './ProductCardUI';
 
-export { DesktopHeaderUI, ProductCardUI };
+export { HeaderUI, ProductCardUI };

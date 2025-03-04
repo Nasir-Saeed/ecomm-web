@@ -1,9 +1,9 @@
 "use client"
-import { Container, Row, Col, Form, InputGroup } from "react-bootstrap";
-import { FaTwitter, FaFacebookF, FaPinterestP, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
-import { FaEnvelope, FaPhone } from "react-icons/fa6";
-import classes from './FooterUI.module.css'
 import Link from "next/link";
+import { Container, Form, InputGroup } from "react-bootstrap";
+import { FaFacebookF, FaInstagram, FaPinterestP, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa6";
+import classes from './FooterUI.module.css';
 
 export default function FooterUI() {
     return (
@@ -41,7 +41,7 @@ export default function FooterUI() {
                         <h5 className={classes.footer_title}>Contact</h5>
                         <p><FaEnvelope className="me-2" color="#66fcf1" size={20} />info@demos.com</p>
                         <p><FaPhone className="me-2" color="#66fcf1" size={20} />+92 312 888 0000</p>
-                        <p className={classes.map_icon}><FaMapMarkerAlt className="me-2" color="#66fcf1" size={20} /><p className="m-0">abc Road Main Street, 1600 Paris, USA</p> </p>
+                        {/* <p className={classes.map_icon}><FaMapMarkerAlt className="me-2" color="#66fcf1" size={20} /><p className="m-0">abc Road Main Street, 1600 Paris, USA</p> </p> */}
                     </div>
 
 

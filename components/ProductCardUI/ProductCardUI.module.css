@@ -1,6 +1,11 @@
+.product_card_container {
+    cursor: pointer;
+}
+
 .product_card_image {
     position: relative;
-    height: 300px;
+    height: 400px;
+    width: 100%;
 }
 
 .product_card_image img {

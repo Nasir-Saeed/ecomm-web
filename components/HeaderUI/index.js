@@ -4,9 +4,9 @@ import Link from 'next/link';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import classes from "./DesktopHeaderUI.module.css";
+import classes from "./HeaderUI.module.css";
 
-export default function DesktopHeaderUI() {
+export default function HeaderUI() {
 
     return (
         <Navbar expand="lg" style={{ backgroundColor: "rgb(5 5 5)" }}>
